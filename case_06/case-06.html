@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 6</title>
+
+    <style>
+
+       #sky{
+           background-image: url("/assets/images/image/sky.jpg");
+           width: 100%;
+           height: 100vh;
+           position: relative;
+           overflow: hidden;
+       }
+
+       #city{
+           background-image: url("/assets/images/image/city.png");
+           width: 300%;
+           height: 28vh;
+           position: absolute;
+           top: 30vh;
+           animation: city 8s linear infinite;
+       }
+
+       #road{
+           background-image: url("/assets/images/image/road.jpg");
+           width: 100%;
+           height: 45vh;
+           position: absolute;
+           top: 27vh;
+       }
+
+       #car{
+           background-image: url("/assets/images/image/car.png");
+           width: 1000px;
+           height: 350px;
+           position: absolute;
+           top: -18vh;
+           animation: car 8s linear infinite;
+           left: 250px;
+       }
+
+       #wheel-1{
+           background-image: url("/assets/images/image/wheel.png");
+           width: 250px;
+           height: 250px;
+           position: absolute;
+           top: 20vh;
+           left: 60px;
+           animation: wheel 1s linear infinite;
+       }
+
+       #wheel-2{
+           background-image: url("/assets/images/image/wheel.png");
+           width: 250px;
+           height: 250px;
+           position: absolute;
+           top: 20vh;
+           left: 680px;
+           animation: wheel 1s linear infinite;
+       }
+
+       @keyframes wheel {
+            100%{
+               transform: rotate(360deg);
+           }
+       }
+
+       @keyframes city {
+           100%{
+               transform: translateX(-1000px);
+           }
+       }
+
+       @keyframes car {
+           100% {
+               transform: translateX(1000px);
+           }
+       }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="sky" class="image">
+    <div id="city" class="image">
+        <div id="road" class="image">
+            <div id="car" class="image">
+                <div id="wheel-1" class="image"></div>
+                <div id="wheel-2" class="image"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--<div id="sky" class="picture">-->
+
+<!--    <img src="/assets/images/image/sky.jpg">-->
+
+<!--</div>-->
+
+<!--<div id="city" class="picture">-->
+
+<!--    <img src="/assets/images/image/city.png">-->
+
+<!--</div>-->
+
+<!--<div id="road" class="picture">-->
+
+<!--    <img src="/assets/images/image/road.jpg">-->
+
+<!--</div>-->
+
+<!--<div id="car" class="picture">-->
+
+<!--    <img src="/assets/images/image/car.png">-->
+
+<!--</div>-->
+
+<!--<div id="wheel" class="picture">-->
+
+<!--    <img src="/assets/images/image/wheel.png">-->
+
+<!--</div>-->
+
+
+
+
+</body>
+</html>
